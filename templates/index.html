@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask with React</title>
+  </head>
+  
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+    <script src="{{ url_for('static', filename='systemjs.config.js') }}"></script>
+    
+    <script>
+      // flask values
+      const globalValuesDict = {
+        headerContent: "Let's start Flask with React!"
+      };
+
+      // render to root
+      System.import("{{ url_for('static', filename='roots/index.jsx') }}");
+    </script>
+  </body>
+</html>
