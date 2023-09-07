@@ -1,8 +1,9 @@
 import React from "react";
-import logContent from "../helpers/log.js"
+import logContent from "../helpers/log.js";
 
-
-export default function Header(props) {
+function Header(props) {
   logContent(props.headerContent);
   return <h1>{props.headerContent}</h1>;
 }
+
+export default Header;
