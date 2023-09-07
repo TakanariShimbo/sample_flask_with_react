@@ -12,4 +12,4 @@ services:
     volumes:
       - ./../storage_flask_with_react/work:/work
     working_dir: /work
-    command: ["python", "server.py"]
+    tty: true
