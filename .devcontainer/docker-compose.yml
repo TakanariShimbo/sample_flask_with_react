@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  flask_with_react_server:
+    build:
+      context: ./../storage_flask_with_react/
+      dockerfile: Dockerfile
+    image: python39_for_flask:1.0
+    container_name: container_flask_with_react
+    ports:
+      - 5000:5000
+    volumes:
+      - ./../storage_flask_with_react/work:/work
+    working_dir: /work
+    command: ["python", "server.py"]

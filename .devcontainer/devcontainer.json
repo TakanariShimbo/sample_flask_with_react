@@ -1,0 +1,15 @@
+{
+  "name": "Dev Flask With React",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "flask_with_react_server",
+  "extensions": [
+	"oderwat.indent-rainbow",
+	"ms-python.black-formatter",
+	"ms-python.python",
+	"ms-python.vscode-pylance",
+	"esbenp.prettier-vscode",
+	"dbaeumer.vscode-eslint",
+	"dsznajder.es7-react-js-snippets"
+],
+  "workspaceFolder": "/work",
+}
