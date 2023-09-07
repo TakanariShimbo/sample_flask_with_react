@@ -9,10 +9,11 @@
     "ms-python.vscode-pylance",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "dsznajder.es7-react-js-snippets"
+    "dsznajder.es7-react-js-snippets",
+    "bradlc.vscode-tailwindcss"
   ],
   "settings": {
     "prettier.printWidth": 150
   },
-  "workspaceFolder": "/work",
+  "workspaceFolder": "/work"
 }
